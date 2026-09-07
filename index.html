@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Creative Kaushik — Video Editor &amp; Colorist</title>
+  <meta content="Creative Kaushik is a video editor and colorist crafting commercials, music videos, short films and reels with sharp pacing and rich color." name="description"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700;800;900&amp;family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- ============ PAGE LOADER ============ -->
+  <div aria-live="polite" class="page-loader" id="pageLoader">
+    <div aria-hidden="true" class="loader-float lf-a"></div>
+    <div aria-hidden="true" class="loader-float lf-b"></div>
+    <div aria-hidden="true" class="loader-float lf-c"></div>
+    <div class="loader-box glass-purple">
+      <span class="loader-count mono" id="loaderCount">0</span>
+    </div>
+    <p class="loader-label mono">LOADING SHOWREEL</p>
+  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Ambient background layers -->
+  <div aria-hidden="true" class="ambient-wrapper">
+    <div class="grain-overlay"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner glass">
+      <a aria-label="Creative Kaushik Home" class="nav-brand" href="#home">
+        <span aria-hidden="true" class="brand-mark">
+          <svg height="20" viewbox="0 0 24 24" width="20">
+            <path d="M4 4h11l5 5v11H4z" fill="none" stroke="currentColor" stroke-width="1.6"></path>
+            <path d="M9 9l7 4-7 4z" fill="currentColor"></path>
+          </svg>
+        </span>
+        <span class="brand-text">CREATIVE<span class="brand-accent">KAUSHIK</span></span>
+      </a>
+      <nav aria-label="Primary" class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#graphic-work">Design</a>
+        <a href="#reels">Reels</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div aria-hidden="true" class="nav-meta mono">
+        <span class="rec-dot"></span>
+        <span>REC</span>
+        <span class="nav-timecode" id="navTimecode">00:00:00:00</span>
+      </div>
+      <a class="btn btn-primary nav-cta" href="#contact">
+        <span>Start a project</span>
+        <svg class="btn-arrow" height="16" viewbox="0 0 24 24" width="16">
+          <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+      </a>
+      <button aria-controls="navMobile" aria-expanded="false" aria-label="Open menu" class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile glass" id="navMobile">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#graphic-work">Design</a>
+      <a href="#reels">Reels</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary" href="#contact">Start a project
+        <svg class="btn-arrow" height="16" viewbox="0 0 24 24" width="16">
+          <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div aria-hidden="true" class="hero-bg">
+        <div class="blob blob-a"></div>
+        <div class="blob blob-b"></div>
+        <div class="hero-grid-lines"></div>
+      </div>
+      <div aria-hidden="true" class="frame-marks">
+        <span class="fm fm-tl"></span><span class="fm fm-tr"></span>
+        <span class="fm fm-bl"></span><span class="fm fm-br"></span>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow mono" data-reveal="fade">
+            <span class="rec-dot"></span> REC • VIDEO EDITOR / COLOR ARTIST
+          </p>
+          <h1 class="hero-title">
+            <span class="ht-line" data-parallax="0.15">Cutting Chaos</span>
+            <span class="ht-line ht-accent" data-parallax="0.3">Into Cinema</span>
+          </h1>
+          <p class="hero-sub" data-delay="1" data-reveal="fade-up">
+            I'm Kaushik — I edit commercials, music videos and brand films that hold
+            attention from frame one to the last cut. Sharp pacing, rich color, sound that lands on the beat.
+          </p>
+          <div class="hero-actions" data-delay="2" data-reveal="fade-up">
+            <button aria-label="Play showreel video preview" class="btn btn-primary" data-youtube="YE7VzlLtp-4" id="heroShowreelBtn">
+              <svg class="btn-icon" height="14" viewbox="0 0 24 24" width="14">
+                <path d="M8 5v14l11-7z" fill="currentColor"></path>
+              </svg>
+              <span>View showreel</span>
+            </button>
+            <a class="btn btn-secondary" href="#contact">
+              <span>Book a call</span>
+              <svg class="btn-arrow" height="16" viewbox="0 0 24 24" width="16">
+                <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="hero-stats mono" data-delay="3" data-reveal="fade-up">
+            <span>120+ PROJECTS</span><span class="dot-sep">•</span>
+            <span>4.5 YRS</span><span class="dot-sep">•</span>
+            <span>4 AWARDS</span>
+          </div>
+        </div>
+        <div class="hero-visual" data-delay="2" data-reveal="fade">
+          <div class="glass-stage" id="glassStage">
+            <div class="glass-object" id="glassObject">
+              <div class="badge-chip chip-a mono glass">
+                <span class="rec-dot"></span> LIVE COLOR • REC709
+              </div>
+              <div aria-hidden="true" class="timeline-panel panel-back glass">
+                <div class="mini-track"></div>
+                <div class="mini-track"></div>
+              </div>
+              <div class="timeline-panel panel-main glass">
+                <div class="panel-label mono">A-ROLL • V1</div>
+                <div class="clip-track">
+                  <span class="clip clip-1"></span>
+                  <span class="clip clip-2"></span>
+                  <span class="clip clip-3"></span>
+                  <span class="clip clip-4"></span>
+                </div>
+                <div class="playhead" style="left:38%">
+                  <span class="playhead-dot"></span>
+                </div>
+                <div class="panel-timecode mono">00:00:14:08</div>
+              </div>
+              <div class="waveform-panel glass">
+                <div class="wave-row" id="waveRow"></div>
+              </div>
+              <div class="badge-chip chip-b mono glass">4K • 24 FPS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-cue mono">
+        <span>SCROLL</span>
+        <span class="scroll-line"><span class="scroll-line-fill"></span></span>
+        <span id="scrollTimecode">00:00</span>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section aria-label="Tools and skills" class="marquee">
+      <div class="marquee-track">
+        <div aria-hidden="false" class="marquee-group">
+          <span>DaVinci Resolve</span><span class="m-dot">•</span>
+          <span>Premiere Pro</span><span class="m-dot">•</span>
+          <span>After Effects</span><span class="m-dot">•</span>
+          <span>Color Grading</span><span class="m-dot">•</span>
+          <span>Motion Design</span><span class="m-dot">•</span>
+          <span>Sound Design</span><span class="m-dot">•</span>
+          <span>Audition</span><span class="m-dot">•</span>
+        </div>
+        <div aria-hidden="true" class="marquee-group">
+          <span>DaVinci Resolve</span><span class="m-dot">•</span>
+          <span>Premiere Pro</span><span class="m-dot">•</span>
+          <span>After Effects</span><span class="m-dot">•</span>
+          <span>Color Grading</span><span class="m-dot">•</span>
+          <span>Motion Design</span><span class="m-dot">•</span>
+          <span>Sound Design</span><span class="m-dot">•</span>
+          <span>Audition</span><span class="m-dot">•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="services-head">
+          <span aria-hidden="true" class="section-bignum">01</span>
+          <p class="eyebrow mono" data-reveal="fade">SERVICES WE OFFER</p>
+        </div>
+        <div class="services-list" id="servicesList">
+          <div class="service-row" data-reveal="fade-up">
+            <button aria-expanded="false" class="service-row-top">
+              <span class="service-idx mono">01</span>
+              <h3 class="service-title">Content Strategy</h3>
+              <span aria-hidden="true" class="service-dot"></span>
+            </button>
+            <div class="service-row-body">
+              <div class="service-row-body-inner">
+                <div class="service-tags">
+                  <span class="chip">Scripting</span>
+                  <span class="chip">Storyboarding</span>
+                  <span class="chip">Platform Planning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-row" data-delay="1" data-reveal="fade-up">
+            <button aria-expanded="true" class="service-row-top">
+              <span class="service-idx mono">02</span>
+              <h3 class="service-title">Video Editing</h3>
+              <span aria-hidden="true" class="service-dot"></span>
+            </button>
+            <div class="service-row-body">
+              <div class="service-row-body-inner">
+                <div class="service-tags">
+                  <span class="chip">Shorts &amp; Reels</span>
+                  <span class="chip">Long Form</span>
+                  <span class="chip">Podcasts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-row" data-delay="2" data-reveal="fade-up">
+            <button aria-expanded="false" class="service-row-top">
+              <span class="service-idx mono">03</span>
+              <h3 class="service-title">AI Content</h3>
+              <span aria-hidden="true" class="service-dot"></span>
+            </button>
+            <div class="service-row-body">
+              <div class="service-row-body-inner">
+                <div class="service-tags">
+                  <span class="chip">Script to Video</span>
+                  <span class="chip">AI Avatars</span>
+                  <span class="chip">Voice Cloning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-row" data-delay="3" data-reveal="fade-up">
+            <button aria-expanded="false" class="service-row-top">
+              <span class="service-idx mono">04</span>
+              <h3 class="service-title">Graphic Designing</h3>
+              <span aria-hidden="true" class="service-dot"></span>
+            </button>
+            <div class="service-row-body">
+              <div class="service-row-body-inner">
+                <div class="service-tags">
+                  <span class="chip">Thumbnails</span>
+                  <span class="chip">Social Posts</span>
+                  <span class="chip">Brand Kits</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT / BENTO ============ -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow mono" data-reveal="fade">02 • WHO'S CUTTING</p>
+          <h2 class="section-title" data-reveal="fade-up">Precision in the edit.<br/>Personality in the story.</h2>
+        </div>
+        <div class="bento-grid">
+          <div class="bento-card bento-bio glass-purple" data-reveal="fade-up">
+            <div aria-hidden="true" class="bio-portrait">
+              <div class="bio-portrait-mask"></div>
+              <img alt="Kaushik portrait" class="bio-photo" loading="lazy" src="Assets\Ai\profile.jpg"/>
+              <svg aria-hidden="true" class="wave-deco" viewbox="0 0 200 40">
+                <path d="M0 20 Q 10 2 20 20 T 40 20 T 60 20 T 80 20 T 100 20 T 120 20 T 140 20 T 160 20 T 180 20 T 200 20" fill="none" stroke="currentColor" stroke-width="2"></path>
+              </svg>
+            </div>
+            <div class="bio-text">
+              <p class="bio-kicker mono">DIRECTOR'S CUT • 00:00:04:12</p>
+              <p>I've spent four and a half years in the timeline — cutting brand films, music
+                videos and shorts for clients who need their story to land fast. I care
+                about rhythm, contrast and the one frame that makes people stop scrolling.</p>
+              <p>Based worldwide, working remote. Available for freelance and long-term collaborations.</p>
+            </div>
+          </div>
+          <div class="bento-card bento-stat glass" data-delay="1" data-reveal="fade-up">
+            <span class="stat-num mono" data-count="120">0</span>
+            <span class="stat-label">Projects delivered</span>
+          </div>
+          <div class="bento-card bento-stat glass" data-delay="2" data-reveal="fade-up">
+            <span class="stat-num mono" data-count="4.5">0</span>
+            <span class="stat-label">Years editing</span>
+          </div>
+          <div class="bento-card bento-stat glass" data-delay="3" data-reveal="fade-up">
+            <span class="stat-num mono" data-count="4">0</span>
+            <span class="stat-label">Award selections</span>
+          </div>
+          <div class="bento-card bento-tools glass" data-delay="1" data-reveal="fade-up">
+            <p class="bento-label mono">TOOLKIT</p>
+            <div class="tool-chips">
+              <span class="chip">Premiere Pro</span>
+              <span class="chip">DaVinci Resolve</span>
+              <span class="chip">After Effects</span>
+              <span class="chip">Audition</span>
+              <span class="chip">Photoshop</span>
+              <span class="chip">Cinema 4D</span>
+            </div>
+          </div>
+          <div class="bento-card bento-quote glass-purple" data-delay="2" data-reveal="fade-up">
+            <p aria-hidden="true" class="quote-mark">“</p>
+            <p class="quote-text">Every great edit hides a hundred invisible decisions. My job is to make sure you only feel the good ones.</p>
+            <p class="quote-tc mono">— C.K. / 00:00:09:02</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO (VIDEO) ============ -->
+    <section class="portfolio" id="work">
+      <div class="container">
+        <div class="section-head section-head-row">
+          <div>
+            <p class="eyebrow mono" data-reveal="fade">03 • SELECTED WORK</p>
+            <h2 class="section-title" data-reveal="fade-up">Recent cuts.</h2>
+          </div>
+          <div aria-label="Filter projects" class="portfolio-filters" data-reveal="fade" role="tablist">
+            <button aria-selected="true" class="filter-btn is-active" data-filter="all" role="tab">All</button>
+            <button aria-selected="false" class="filter-btn" data-filter="commercial" role="tab">Commercial</button>
+            <button aria-selected="false" class="filter-btn" data-filter="music-video" role="tab">Music Video</button>
+            <button aria-selected="false" class="filter-btn" data-filter="short-film" role="tab">Short Film</button>
+            <button aria-selected="false" class="filter-btn" data-filter="color" role="tab">Color Grade</button>
+          </div>
+        </div>
+        <div class="portfolio-grid" id="portfolioGrid">
+          <article class="project-card" data-category="commercial" data-reveal="fade-up">
+            <div class="project-thumb" data-youtube="pauwWXCqarE">
+              <img alt="Solace Skincare commercial thumbnail" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/pauwWXCqarE/maxresdefault.jpg"/>
+              <span class="thumb-tag mono">COMMERCIAL</span>
+              <button aria-label="Play Solace Skincare preview" class="project-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+            </div>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3>Product Showcase</h3>
+                <span class="pi-role mono">EDIT • COLOR</span>
+              </div>
+              <p>Experience the product up close, where premium design meets quality, detail, and innovation.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="music-video" data-delay="1" data-reveal="fade-up">
+            <div class="project-thumb" data-youtube="QA-SMMuNlko">
+              <img alt="Nightwave Afterglow music video thumbnail" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/QA-SMMuNlko/maxresdefault.jpg"/>
+              <button aria-label="Play Nightwave Afterglow preview" class="project-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+            </div>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3>Anime Explanation</h3>
+                <span class="pi-role mono">EDIT • VFX</span>
+              </div>
+              <p>Exploring the story, characters, mysteries, and hidden details behind your favorite anime.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="short-film" data-delay="2" data-reveal="fade-up">
+            <div class="project-thumb" data-youtube="f5p0njz1Bg0">
+              <img alt="Echoes short film preview thumbnail" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/f5p0njz1Bg0/maxresdefault.jpg"/>
+              <button aria-label="Play Echoes short film preview" class="project-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+            </div>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3>Trends Tutorial</h3>
+                <span class="pi-role mono">EDIT • SOUND</span>
+              </div>
+              <p>Master the latest trends with simple, practical tutorials designed to elevate your creative skills.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="commercial" data-reveal="fade-up">
+            <div class="project-thumb" data-youtube="pQTqC_kCO2Q">
+              <img alt="Loom Coffee Co. commercial thumbnail" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/pQTqC_kCO2Q/maxresdefault.jpg"/>
+              <button aria-label="Play Loom Coffee Co. preview" class="project-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+            </div>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3>Grand Wedding</h3>
+                <span class="pi-role mono">EDIT</span>
+              </div>
+              <p>A celebration of love, elegance, and unforgettable moments woven into one grand wedding.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="color" data-delay="1" data-reveal="fade-up">
+            <div class="project-thumb" data-youtube="ikXYq42M68k">
+              <img alt="Lumen Grade Reel thumbnail" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/ikXYq42M68k/maxresdefault.jpg"/>
+              <button aria-label="Play Lumen color reel preview" class="project-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+            </div>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3>Family Legacy</h3>
+                <span class="pi-role mono">COLOR ONLY</span>
+              </div>
+              <p>A celebration of love, elegance, and unforgettable moments woven into one grand wedding.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="music-video" data-delay="2" data-reveal="fade-up">
+            <div class="project-thumb" data-youtube="OWrvf92eZlA">
+              <img alt="Verve Athletics campaign preview thumbnail" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/OWrvf92eZlA/maxresdefault.jpg"/>
+              <button aria-label="Play Verve Athletics campaign preview" class="project-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+            </div>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3>Realestate Dholera</h3>
+                <span class="pi-role mono">EDIT • COLOR</span>
+              </div>
+              <p>Invest smart today in Dholera City, the next major destination for growth and opportunity.</p>
+            </div>
+          </article>
+        </div>
+        <p class="portfolio-empty mono" hidden="" id="portfolioEmpty">No cuts in this category yet.</p>
+      </div>
+    </section>
+
+    <!-- ============ GRAPHIC DESIGN WORK (VISUAL WORK) ============ -->
+    <!-- Direct linked pages for each project instead of pop-up -->
+    <section class="portfolio graphic-work" id="graphic-work">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow mono" data-reveal="fade">04 • GRAPHIC DESIGN</p>
+          <h2 class="section-title" data-reveal="fade-up">Visual work.</h2>
+        </div>
+        <div class="portfolio-grid" id="graphicGrid">
+          <!-- Card 1: Gadgetrea -->
+          <article class="project-card graphic-card" data-reveal="fade-up">
+            <a aria-label="View project Gadgetrea" class="project-thumb" href="project-gadgetrea.html">
+              <img alt="Gadgetrea thumbnails" class="thumb-poster" loading="lazy" src="Assets/gadgetria/Frame 27.png"/>
+              <span aria-hidden="true" class="graphic-view mono">View project
+                <svg height="13" viewbox="0 0 24 24" width="13">
+                  <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3><a href="project-gadgetrea.html">Gadgetrea</a></h3>
+                <span class="pi-role mono">gadget and accessories</span>
+              </div>
+              <p>Smart gadgets and accessories designed to elevate everyday convenience, connectivity, and modern lifestyles.</p>
+            </div>
+          </article>
+
+          <!-- Card 2: Trusttap -->
+          <article class="project-card graphic-card" data-delay="1" data-reveal="fade-up">
+            <a aria-label="View project Trusttap" class="project-thumb" href="project-trusttap.html">
+              <img alt="Trusttap Instagram kit" class="thumb-poster" loading="lazy" src="Assets/Trustap/Frame 46.png"/>
+              <span aria-hidden="true" class="graphic-view mono">View project
+                <svg height="13" viewbox="0 0 24 24" width="13">
+                  <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3><a href="project-trusttap.html">Trusttap</a></h3>
+                <span class="pi-role mono">INSTAGRAM KIT</span>
+              </div>
+              <p>Reliable tyre assurance solutions designed to provide protection, confidence, and peace of mind on every journey.</p>
+            </div>
+          </article>
+
+          <!-- Card 3: Lumen -->
+          <article class="project-card graphic-card" data-delay="2" data-reveal="fade-up">
+            <a aria-label="View project Lumen" class="project-thumb" href="project-lumen.html">
+              <img alt="Lumen brand kit" class="thumb-poster" loading="lazy" src="Assets/AAPS Interior/Frame 80.png"/>
+              <!-- <span class="thumb-tag mono">BRAND KIT</span> -->
+              <span aria-hidden="true" class="graphic-view mono">View project
+                <svg height="13" viewbox="0 0 24 24" width="13">
+                  <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3><a href="project-lumen.html">AAPS Interior</a></h3>
+                <span class="pi-role mono">STUDIO BRAND KIT</span>
+              </div>
+              <p>Logo, type system and color palette for a color-grading studio.</p>
+            </div>
+          </article>
+
+          <!-- Card 4: Echoes -->
+          <article class="project-card graphic-card" data-reveal="fade-up">
+            <a aria-label="View project Echoes" class="project-thumb" href="project-echoes.html">
+              <img alt="Echoes festival poster" class="thumb-poster" loading="lazy" src="Assets/Matrix/Frame 85.png"/>
+              <!-- <span class="thumb-tag mono">POSTER</span> -->
+              <span aria-hidden="true" class="graphic-view mono">View project
+                <svg height="13" viewbox="0 0 24 24" width="13">
+                  <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3><a href="project-echoes.html">Matrix</a></h3>
+                <span class="pi-role mono">FESTIVAL POSTER</span>
+              </div>
+              <p>High-performance PC peripherals crafted for gamers, creators, and modern computing experiences.</p>
+            </div>
+          </article>
+
+          <!-- Card 5: Nightwave -->
+          <article class="project-card graphic-card" data-delay="1" data-reveal="fade-up">
+            <a aria-label="View project Nightwave" class="project-thumb" href="project-nightwave.html">
+              <img alt="Nightwave album cover" class="thumb-poster" loading="lazy" src="Assets\Livfin\Thumb.png"/>
+              <!-- <span class="thumb-tag mono">COVER ART</span> -->
+              <span aria-hidden="true" class="graphic-view mono">View project
+                <svg height="13" viewbox="0 0 24 24" width="13">
+                  <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3><a href="project-nightwave.html">Fintech</a></h3>
+                <span class="pi-role mono">AFTERGLOW COVER ART</span>
+              </div>
+              <p>Moody album cover matching the single's neon-noir world.</p>
+            </div>
+          </article>
+
+          <!-- Card 6: Aurora Beauty -->
+          <article class="project-card graphic-card" data-delay="2" data-reveal="fade-up">
+            <a aria-label="View project Aurora Beauty" class="project-thumb" href="project-aurora-beauty.html">
+              <img alt="Aurora Beauty packaging" class="thumb-poster" loading="lazy" src="Assets\Panash\Thumb.png"/>
+              <!-- <span class="thumb-tag mono">PACKAGING</span> -->
+              <span aria-hidden="true" class="graphic-view mono">View project
+                <svg height="13" viewbox="0 0 24 24" width="13">
+                  <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3><a href="project-aurora-beauty.html">Panash</a></h3>
+                <span class="pi-role mono">CAPSULE PACKAGING</span>
+              </div>
+              <p>Ayurvedic wellness and beauty products blending natural ingredients with timeless traditions for modern self-care.</p>
+            </div>
+          </article>
+
+          <!-- Extras for load-more -->
+          <article class="project-card graphic-card is-hidden-extra" data-reveal="fade-up">
+            <a aria-label="View project Verve Athletics" class="project-thumb" href="project-verve-athletics.html">
+              <img alt="Verve Athletics thumbnails" class="thumb-poster" loading="lazy" src="Assets\Erise\thumb.png"/>
+              <!-- <span class="thumb-tag mono">THUMBNAIL</span> -->
+              <span aria-hidden="true" class="graphic-view mono">View project
+                <svg height="13" viewbox="0 0 24 24" width="13">
+                  <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3><a href="project-verve-athletics.html">Stall Brandings</a></h3>
+                <!-- <span class="pi-role mono">LAUNCH DAY THUMBNAILS</span> -->
+              </div>
+              <p>Eye-catching exhibition graphics, posters, and booth materials designed to create impactful brand experiences.</p>
+            </div>
+          </article>
+          <article class="project-card graphic-card is-hidden-extra" data-reveal="fade-up">
+            <a aria-label="View project Aurora Beauty Carousel" class="project-thumb" href="project-aurora-carousel.html">
+              <img alt="Aurora Beauty carousel" class="thumb-poster" loading="lazy" src="Assets\Thumbnails\Thumb.png"/>
+              <!-- <span class="thumb-tag mono">SOCIAL POST</span> -->
+              <span aria-hidden="true" class="graphic-view mono">View project
+                <svg height="13" viewbox="0 0 24 24" width="13">
+                  <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3><a href="project-aurora-carousel.html">Thumbnails</a></h3>
+                <span class="pi-role mono">STORY &amp; CAROUSEL SET</span>
+              </div>
+              <p>High-impact YouTube thumbnails designed to capture attention, spark curiosity, and maximize viewer clicks.</p>
+            </div>
+          </article>
+          <article class="project-card graphic-card is-hidden-extra" data-reveal="fade-up">
+            <a aria-label="View project Orbit Studio" class="project-thumb" href="project-orbit-studio.html">
+              <img alt="Orbit Studio system" class="thumb-poster" loading="lazy" src="Assets\Typography\thumb.png"/>
+              <!-- <span class="thumb-tag mono">BRAND KIT</span> -->
+              <span aria-hidden="true" class="graphic-view mono">View project
+                <svg height="13" viewbox="0 0 24 24" width="13">
+                  <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3><a href="project-orbit-studio.html">Typography</a></h3>
+                <!-- <span class="pi-role mono">PODCAST BRAND SYSTEM</span> -->
+              </div>
+              <p>Creative typography compositions that transform words into expressive, visually engaging, and memorable design experiences.</p>
+            </div>
+          </article>
+          <article class="project-card graphic-card is-hidden-extra" data-reveal="fade-up">
+            <a aria-label="View project Nomad Coffee" class="project-thumb" href="project-nomad-coffee.html">
+              <img alt="Nomad Coffee menu" class="thumb-poster" loading="lazy" src="Assets\Booth\thumb.png"/>
+              <!-- <span class="thumb-tag mono">POSTER</span> -->
+              <span aria-hidden="true" class="graphic-view mono">View project
+                <svg height="13" viewbox="0 0 24 24" width="13">
+                  <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3><a href="project-nomad-coffee.html">Booth Model Design</a></h3>
+                <span class="pi-role mono">MENU &amp; SIGNAGE</span>
+              </div>
+              <p>Immersive 3D exhibition booth designs modeled in 3ds Max, combining functionality, branding, and visual impact.
+</p>
+            </div>
+          </article>
+          <article class="project-card graphic-card is-hidden-extra" data-reveal="fade-up">
+            <a aria-label="View project Orbit Studio Season 2" class="project-thumb" href="project-orbit-season2.html">
+              <img alt="Orbit Studio cover art" class="thumb-poster" loading="lazy" src="Assets\Umang\Thumb.png"/>
+              <!-- <span class="thumb-tag mono">COVER ART</span> -->
+              <span aria-hidden="true" class="graphic-view mono">View project
+                <svg height="13" viewbox="0 0 24 24" width="13">
+                  <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3><a href="project-orbit-season2.html">Umang Living</a></h3>
+                <span class="pi-role mono">SEASON 2 COVER ART</span>
+              </div>
+              <p>Thoughtful senior living experiences designed around comfort, community, independence, and a fulfilling lifestyle.</p>
+            </div>
+          </article>
+          <article class="project-card graphic-card is-hidden-extra" data-reveal="fade-up">
+            <a aria-label="View project Solace Skincare Gift Set" class="project-thumb" href="project-solace-giftset.html">
+              <img alt="Gift set packaging" class="thumb-poster" loading="lazy" src="Assets\Invitations\Thumb.png"/>
+              <!-- <span class="thumb-tag mono">PACKAGING</span> -->
+              <span aria-hidden="true" class="graphic-view mono">View project
+                <svg height="13" viewbox="0 0 24 24" width="13">
+                  <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="project-info">
+              <div class="pi-top">
+                <h3><a href="project-solace-giftset.html">Invitations</a></h3>
+                <span class="pi-role mono">GIFT SET PACKAGING</span>
+              </div>
+              <p>Elegant wedding and birthday invitations crafted with personalized designs that make every celebration feel truly special.</p>
+            </div>
+          </article>
+        </div>
+        <div class="load-more-wrap" data-reveal="fade-up">
+          <button aria-expanded="false" class="load-more-btn" id="loadMoreBtn">
+            <span class="load-more-text">Load More</span>
+            <svg class="load-more-icon" height="16" viewbox="0 0 24 24" width="16">
+              <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REELS ============ -->
+    <section class="reels" id="reels">
+      <div class="container">
+        <div class="section-head section-head-row">
+          <div>
+            <p class="eyebrow mono" data-reveal="fade">05 • REELS &amp; SHORT FORM</p>
+            <h2 class="section-title" data-reveal="fade-up">Made for the scroll.</h2>
+          </div>
+          <div class="reels-controls" data-reveal="fade">
+            <button aria-label="Previous reel" class="reel-nav" id="reelPrev">
+              <svg height="18" viewbox="0 0 24 24" width="18"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+            </button>
+            <button aria-label="Next reel" class="reel-nav" id="reelNext">
+              <svg height="18" viewbox="0 0 24 24" width="18"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="reels-carousel">
+        <div aria-hidden="true" class="reels-fade reels-fade-left"></div>
+        <div class="reels-track" id="reelsTrack">
+          <article class="reel-card" data-reveal="fade-up">
+            <div class="reel-thumb" data-youtube="g997xGab0ck">
+              <img alt="Studio Warmup reel" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/g997xGab0ck/maxresdefault.jpg"/>
+              <button aria-label="Play Studio Warmup preview" class="reel-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+              <div class="reel-info">
+                <p class="reel-title">Umang Realtors</p>
+                <div class="reel-meta mono"><span>Instagram</span><span class="dot-sep">•</span><span>1.2M views</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="reel-card" data-delay="1" data-reveal="fade-up">
+            <div class="reel-thumb" data-youtube="G2Qng2AxByM">
+              <img alt="Behind the Grade reel" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/G2Qng2AxByM/maxresdefault.jpg"/>
+              <button aria-label="Play Behind the Grade preview" class="reel-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+              <div class="reel-info">
+                <p class="reel-title">Unconscious Mind</p>
+                <div class="reel-meta mono"><span>Shorts</span><span class="dot-sep">•</span><span>845K views</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="reel-card" data-delay="2" data-reveal="fade-up">
+            <div class="reel-thumb" data-youtube="VFqwaPk7wII">
+              <img alt="Sneaker Drop Teaser reel" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/VFqwaPk7wII/maxresdefault.jpg"/>
+              <button aria-label="Play Sneaker Drop Teaser preview" class="reel-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+              <div class="reel-info">
+                <p class="reel-title">Upside Funding</p>
+                <div class="reel-meta mono"><span>TikTok</span><span class="dot-sep">•</span><span>2.4M views</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="reel-card" data-reveal="fade-up">
+            <div class="reel-thumb" data-youtube="yglTF_oqrbM">
+              <img alt="Coffee, Slow reel" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/yglTF_oqrbM/maxresdefault.jpg"/>
+              <button aria-label="Play Coffee Slow preview" class="reel-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+              <div class="reel-info">
+                <p class="reel-title">Viral Radar</p>
+                <div class="reel-meta mono"><span>Instagram</span><span class="dot-sep">•</span><span>512K views</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="reel-card" data-delay="1" data-reveal="fade-up">
+            <div class="reel-thumb" data-youtube="8Yab9AMj8-A">
+              <img alt="Backstage Cutdown reel" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/8Yab9AMj8-A/maxresdefault.jpg"/>
+              <button aria-label="Play Backstage Cutdown preview" class="reel-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+              <div class="reel-info">
+                <p class="reel-title">Backstage Cutdown</p>
+                <div class="reel-meta mono"><span>Shorts</span><span class="dot-sep">•</span><span>1.8M views</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="reel-card" data-delay="2" data-reveal="fade-up">
+            <div class="reel-thumb" data-youtube="ac4TAocU7PA">
+              <img alt="Fit Check Fast Cuts reel" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/ac4TAocU7PA/maxresdefault.jpg"/>
+              <button aria-label="Play Fit Check Fast Cuts preview" class="reel-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+              <div class="reel-info">
+                <p class="reel-title">Shraddha Wedding</p>
+                <div class="reel-meta mono"><span>TikTok</span><span class="dot-sep">•</span><span>966K views</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="reel-card" data-reveal="fade-up">
+            <div class="reel-thumb" data-youtube="fLe8efJk700">
+              <img alt="Client Testimonial Cut reel" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/fLe8efJk700/maxresdefault.jpg"/>
+              <button aria-label="Play Client Testimonial Cut preview" class="reel-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+              <div class="reel-info">
+                <p class="reel-title">Roka Ceremony</p>
+                <div class="reel-meta mono"><span>Instagram</span><span class="dot-sep">•</span><span>378K views</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="reel-card" data-delay="1" data-reveal="fade-up">
+            <div class="reel-thumb" data-youtube="hUEFJ-CkWAY">
+              <img alt="Cyberpunk Neon Grade reel" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/hUEFJ-CkWAY/maxresdefault.jpg"/>
+              <button aria-label="Play Cyberpunk Neon Grade preview" class="reel-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+              <div class="reel-info">
+                <p class="reel-title">Wedding Animation</p>
+                <div class="reel-meta mono"><span>Shorts</span><span class="dot-sep">•</span><span>2.1M views</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="reel-card" data-delay="2" data-reveal="fade-up">
+            <div class="reel-thumb" data-youtube="08cW_sjvHZI">
+              <img alt="Speed Ramp Action reel" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/08cW_sjvHZI/maxresdefault.jpg"/>
+              <button aria-label="Play Speed Ramp Action preview" class="reel-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+              <div class="reel-info">
+                <p class="reel-title">Kenko</p>
+                <div class="reel-meta mono"><span>TikTok</span><span class="dot-sep">•</span><span>3.4M views</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="reel-card" data-reveal="fade-up">
+            <div class="reel-thumb" data-youtube="lMbjrpFkrys">
+              <img alt="Macro Watch Commercial reel" class="thumb-poster" loading="lazy" src="https://i.ytimg.com/vi/lMbjrpFkrys/maxresdefault.jpg"/>
+              <button aria-label="Play Macro Watch Commercial preview" class="reel-play">
+                <svg class="icon-play" height="20" viewbox="0 0 24 24" width="20"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+              </button>
+              <div class="reel-info">
+                <p class="reel-title">Cricket Sport</p>
+                <div class="reel-meta mono"><span>Instagram</span><span class="dot-sep">•</span><span>890K views</span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div aria-hidden="true" class="reels-fade reels-fade-right"></div>
+      </div>
+    </section>
+
+    <!-- ============ HOW WE WORK WITH AI ============ -->
+    <section class="ai-workflow" id="ai-workflow">
+      <div class="container">
+        <div class="services-head">
+          <span aria-hidden="true" class="section-bignum">06</span>
+          <p class="eyebrow mono" data-reveal="fade">06 • HOW WE WORK WITH AI</p>
+        </div>
+        <p class="ai-workflow-lead" data-delay="1" data-reveal="fade-up">One real project, set by set: from a written idea to AI key frames to the finished film.</p>
+        <div class="ai-steps" id="aiSteps">
+          <div aria-hidden="true" class="ai-steps-track"><span class="ai-steps-fill" id="aiStepsFill"></span></div>
+          <div class="ai-step" data-reveal="fade-up">
+            <span aria-hidden="true" class="ai-step-dot"></span>
+            <div class="ai-step-card ai-card-idea">
+              <div aria-hidden="true" class="ai-idea-dots"><span></span><span></span><span></span></div>
+              <p class="ai-idea-label mono">PROMPT</p>
+              <p class="ai-idea-text">Ultra-lightweight shoe, soaring effortlessly to feather-like heights, floating feathers, smooth slow motion, clean white background.</p>
+              <span aria-hidden="true" class="ai-idea-cursor"></span>
+            </div>
+            <span class="ai-step-idx mono">01</span>
+            <h4>Idea</h4>
+            <p>Brief, product angle and the shot we want to sell.</p>
+          </div>
+          <div class="ai-step" data-delay="1" data-reveal="fade-up">
+            <span aria-hidden="true" class="ai-step-dot"></span>
+            <div aria-hidden="true" class="ai-step-card ai-card-image">
+              <img alt="AI Key Frame" loading="lazy" src="Assets\Ai\AI1.png"/>
+            </div>
+            <span class="ai-step-idx mono">02</span>
+            <h4>Image</h4>
+            <p>AI-generated key frame of the product on the pitch.</p>
+          </div>
+          <div class="ai-step" data-delay="2" data-reveal="fade-up">
+            <span aria-hidden="true" class="ai-step-dot"></span>
+            <div aria-hidden="true" class="ai-step-card ai-card-gen">
+              <img alt="AI Studio Concept" loading="lazy" src="assets\Ai\AI2.png"/>
+              <span class="ai-card-spark mono">✦ AI</span>
+            </div>
+            <span class="ai-step-idx mono">03</span>
+            <h4>AI Generation</h4>
+            <p>Second frame, studio motion concept with feather burst.</p>
+          </div>
+          <div class="ai-step" data-delay="3" data-reveal="fade-up">
+            <span aria-hidden="true" class="ai-step-dot"></span>
+            <div aria-hidden="true" class="ai-step-card ai-card-sound">
+              <svg class="ai-sound-wave" viewbox="0 0 120 40">
+                <path d="M0 20 Q 6 4 12 20 T 24 20 T 36 20 T 48 20 T 60 20 T 72 20 T 84 20 T 96 20 T 108 20 T 120 20" fill="none" stroke="currentColor" stroke-width="2"></path>
+              </svg>
+              <div class="ai-sound-bars">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <span class="ai-step-idx mono">04</span>
+            <h4>Edit &amp; Sound</h4>
+            <p>Frames animated, cut to beat, graded and sound-designed.</p>
+          </div>
+          <div class="ai-step" data-delay="4" data-reveal="fade-up">
+            <span aria-hidden="true" class="ai-step-dot"></span>
+            <div class="ai-step-card ai-card-final">
+              <img alt="Final Film Render" loading="lazy" src="assets\Ai\Ai Footage.gif"/>
+              <span class="ai-final-tag mono">● REC</span>
+              <p class="ai-final-title">Product Montage</p>
+            </div>
+            <span class="ai-step-idx mono">05</span>
+            <h4>Final</h4>
+            <p>Ready-to-publish film, delivered in platform formats.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="services-head">
+          <span aria-hidden="true" class="section-bignum">07</span>
+          <p class="eyebrow mono" data-reveal="fade">07 • OUR APPROACH</p>
+        </div>
+        <h2 class="section-title" data-reveal="fade-up" style="margin-bottom: clamp(2rem, 5vw, 3.5rem);">From footage to final cut.</h2>
+        <div class="approach-timeline" id="approachTimeline">
+          <span aria-hidden="true" class="approach-track"><span class="approach-fill" id="approachFill"></span></span>
+          <div class="approach-step" data-reveal="fade-up">
+            <span aria-hidden="true" class="approach-dot"></span>
+            <div class="approach-card glass-purple">
+              <span class="approach-idx mono">01</span>
+              <h3>Ingest &amp; organize</h3>
+              <p>Footage, audio and assets get logged, labeled and synced so nothing gets lost mid-cut.</p>
+            </div>
+          </div>
+          <div class="approach-step" data-reveal="fade-up">
+            <span aria-hidden="true" class="approach-dot"></span>
+            <div class="approach-card glass-purple">
+              <span class="approach-idx mono">02</span>
+              <h3>Assembly edit</h3>
+              <p>A rough structure comes together — story order, key beats, first pass on pacing.</p>
+            </div>
+          </div>
+          <div class="approach-step" data-reveal="fade-up">
+            <span aria-hidden="true" class="approach-dot"></span>
+            <div class="approach-card glass-purple">
+              <span class="approach-idx mono">03</span>
+              <h3>Fine cut</h3>
+              <p>Trims, transitions and rhythm get refined until every cut earns its place.</p>
+            </div>
+          </div>
+          <div class="approach-step" data-reveal="fade-up">
+            <span aria-hidden="true" class="approach-dot"></span>
+            <div class="approach-card glass-purple">
+              <span class="approach-idx mono">04</span>
+              <h3>Color &amp; sound</h3>
+              <p>A full grade pass plus mix and sound design bring mood and polish.</p>
+            </div>
+          </div>
+          <div class="approach-step" data-reveal="fade-up">
+            <span aria-hidden="true" class="approach-dot"></span>
+            <div class="approach-card glass-purple">
+              <span class="approach-idx mono">05</span>
+              <h3>Deliver</h3>
+              <p>Exports for every platform, captioned and formatted, ready to publish.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow mono" data-reveal="fade">KIND WORDS</p>
+          <h2 class="section-title" data-reveal="fade-up">What clients say.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote class="testimonial-card glass" data-reveal="fade-up">
+            <p>“Kaushik turned four hours of raw footage into ninety seconds that made our launch. The pacing was exactly right.”</p>
+            <footer>
+              <span class="tm-avatar mono">MP</span>
+              <div>
+                <cite>Mira Patel</cite>
+                <span class="mono">Marketing Lead, Solace Skincare</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card glass" data-delay="1" data-reveal="fade-up">
+            <p>“The color grade alone elevated the whole video. Every note we gave came back better than we imagined.”</p>
+            <footer>
+              <span class="tm-avatar mono">DR</span>
+              <div>
+                <cite>Daniel Reyes</cite>
+                <span class="mono">Director, Nightwave</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card glass" data-delay="2" data-reveal="fade-up">
+            <p>“Fast turnaround, sharp instincts, and edits that actually understood the brand. Easiest hire we've made.”</p>
+            <footer>
+              <span class="tm-avatar mono">JT</span>
+              <div>
+                <cite>Jules Tan</cite>
+                <span class="mono">Founder, Loom Coffee Co.</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA / CONTACT ============ -->
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow mono" data-reveal="fade">08 • GET IN TOUCH</p>
+          <h2 class="section-title" data-reveal="fade-up">Let's cut something great.</h2>
+          <p class="cta-lead" data-delay="1" data-reveal="fade-up">Tell me about your project — timeline, references, footage. I reply within a day.</p>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form glass-purple" data-reveal="fade-up" id="contactForm" novalidate="">
+            <p class="form-tc mono">NEW PROJECT INQUIRY • 00:00:00:00</p>
+            <div class="form-row">
+              <div class="field">
+                <label for="cfName">Name</label>
+                <input autocomplete="name" id="cfName" name="name" placeholder="Your name" required="" type="text"/>
+              </div>
+              <div class="field">
+                <label for="cfEmail">Email</label>
+                <input autocomplete="email" id="cfEmail" name="email" placeholder="you@example.com" required="" type="email"/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="cfType">Project type</label>
+                <select id="cfType" name="type">
+                  <option>Commercial</option>
+                  <option>Music video</option>
+                  <option>Short film</option>
+                  <option>Color grade only</option>
+                  <option>Reels / short-form</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cfTimeline">Timeline</label>
+                <select id="cfTimeline" name="timeline">
+                  <option>Flexible</option>
+                  <option>Within 2 weeks</option>
+                  <option>Within a month</option>
+                  <option>Ongoing / retainer</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="cfMessage">Project details</label>
+              <textarea id="cfMessage" name="message" placeholder="Footage length, references, deadline..." required="" rows="4"></textarea>
+            </div>
+            <div class="form-footer">
+              <button class="btn btn-primary" type="submit">
+                <span>Send message</span>
+                <svg class="btn-arrow" height="16" viewbox="0 0 24 24" width="16">
+                  <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </button>
+              <p class="form-note mono" id="formNote">Opens your email app with these details filled in.</p>
+            </div>
+          </form>
+
+          <div class="contact-side glass" data-delay="1" data-reveal="fade-up">
+            <p class="cta-tc mono">00:00:00:00</p>
+            
+            <p class="contact-side-label mono">PREFER WHATSAPP?</p>
+            <a class="btn btn-secondary contact-whatsapp-btn" href="https://wa.me/919818440658?text=Hi%20Kaushik%2C%20I%27d%20like%20to%20talk%20about%20a%20project" rel="noopener" target="_blank">
+              <svg class="btn-icon" height="16" viewbox="0 0 24 24" width="16">
+                <path d="M17.6 6.3A8.5 8.5 0 0 0 4 16.9L3 21l4.2-1a8.5 8.5 0 0 0 12.4-7.6 8.4 8.4 0 0 0-2-6.1z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.6"></path>
+                <path d="M8.8 8.9c-.2.9.3 1.9 1.5 3.1s2.2 1.7 3.1 1.5c.4-.1 1-.7 1.2-1.1.1-.2 0-.4-.1-.5l-1.3-1c-.2-.1-.4-.1-.5 0l-.5.5c-.6-.2-1.1-.6-1.5-1s-.8-.9-1-1.5l.5-.5c.1-.1.1-.3 0-.5l-1-1.3c-.1-.1-.3-.2-.5-.1-.4.2-1 .8-1.1 1.2z" fill="currentColor"></path>
+              </svg>
+              <span>+91 9818440658</span>
+            </a>
+
+            <!-- Added Email Section -->
+            <p class="contact-side-label mono">EMAIL DIRECTLY</p>
+            <a class="btn btn-secondary contact-email-btn" href="mailto:koushikhazra9014@gmail.com">
+              <svg class="btn-icon" height="16" viewbox="0 0 24 24" width="16">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path>
+                <polyline fill="none" points="22,6 12,13 2,6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></polyline>
+              </svg>
+              <span>koushikhazra9014@gmail.com</span>
+            </a>
+
+            <p class="contact-avail mono"><span class="rec-dot"></span> Available for freelance • Booking Q1 2027</p>
+            
+            <!-- Animated Social Icons in FIND ME -->
+            <p class="contact-side-label mono">FIND ME</p>
+            <div class="cta-socials" aria-label="Social profiles">
+              <a aria-label="Instagram" href="https://instagram.com" rel="noopener" target="_blank">
+                <svg height="18" viewbox="0 0 24 24" width="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+              <a aria-label="YouTube" href="https://youtube.com" rel="noopener" target="_blank">
+                <svg height="18" viewbox="0 0 24 24" width="18" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C21.505 3.545 14 3.545 14 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 2.502 6.186C2 8.07 2 12 2 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C26 15.93 26 12 26 12s0-3.93-.502-5.814zM11.545 15.568V8.432L17.818 12l-6.273 3.568z" transform="translate(-2, 0)"></path></svg>
+              </a>
+              <a aria-label="Vimeo" href="https://vimeo.com" rel="noopener" target="_blank">
+                <svg height="18" viewbox="0 0 24 24" width="18" fill="currentColor"><path d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.525 3.01 7.525c-.179 0-.806.378-1.881 1.132L0 7.197c1.185-1.044 2.351-2.084 3.501-3.128 1.574-1.409 2.75-2.158 3.528-2.245 1.836-.179 2.973.968 3.41 3.44.472 2.653.805 4.303.998 4.952.578 2.38 1.206 3.57 1.881 3.57.518 0 1.294-.749 2.327-2.245 1.033-1.496 1.59-2.617 1.671-3.364.14-1.24-.36-1.859-1.504-1.859-.553 0-1.127.123-1.721.369 1.144-3.754 3.328-5.553 6.554-5.394 2.392.115 3.526 1.621 3.412 4.519z"></path></svg>
+              </a>
+              <a aria-label="LinkedIn" href="https://linkedin.com" rel="noopener" target="_blank">
+                <svg height="18" viewbox="0 0 24 24" width="18" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg>
+              </a>
+              <a aria-label="Behance" href="https://behance.net" rel="noopener" target="_blank">
+                <svg height="18" viewbox="0 0 24 24" width="18" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-1.646 2.08-3.398 2.08-2.613 0-4.041-1.79-4.041-4.225 0-2.482 1.488-4.269 3.864-4.269 2.457 0 3.73 1.702 3.73 4.137 0 .317-.035.663-.058.827h-5.461c.071 1.383.844 2.122 2.108 2.122.923 0 1.547-.404 1.83-1.022l1.426.35zm-3.792-3.66c-.053-1.056-.633-1.702-1.636-1.702-1.021 0-1.673.666-1.764 1.702h3.4zm-11.666 4.66h-4.268v-12h4.52c2.474 0 3.834 1.096 3.834 2.871 0 1.206-.632 2.051-1.674 2.498 1.328.394 2.039 1.411 2.039 2.894 0 2.213-1.693 3.737-4.451 3.737zm-2.179-7.25h1.967c1.238 0 1.942-.534 1.942-1.464 0-.909-.704-1.442-1.942-1.442h-1.967v2.906zm0 5.348h2.09c1.374 0 2.164-.619 2.164-1.644 0-1.047-.79-1.667-2.164-1.667h-2.09v3.311z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="#home">CREATIVE<span class="brand-accent">KAUSHIK</span></a>
+      <nav aria-label="Footer" class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#graphic-work">Design</a>
+        <a href="#reels">Reels</a>
+        <a href="#ai-workflow">AI Lab</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-meta mono">
+        <span class="rec-dot"></span>
+        <span id="footerClock">LOCAL 00:00</span>
+      </div>
+      <button aria-label="Back to top" class="back-to-top" id="backToTop">
+        <svg height="16" viewbox="0 0 24 24" width="16">
+          <path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+      </button>
+    </div>
+    <p class="footer-copy mono">© 2026 Creative Kaushik. All frames reserved.</p>
+  </footer>
+
+  <!-- ============ VIDEO PREVIEW MODAL ============ -->
+  <div aria-hidden="true" class="video-modal" id="videoModal">
+    <div class="video-modal-backdrop" id="videoModalBackdrop"></div>
+    <div aria-label="Video preview" aria-modal="true" class="video-modal-panel glass" role="dialog">
+      <button aria-label="Close preview" class="video-modal-close" id="videoModalClose">
+        <svg height="18" viewbox="0 0 24 24" width="18"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+      </button>
+      <div class="video-modal-frame" id="videoModalFrame"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Failsafe to ensure loader is never stuck
+    (function() {
+      function hideLoader() {
+        var pl = document.getElementById('pageLoader');
+        if (pl && !pl.classList.contains('is-hidden')) {
+          pl.classList.add('is-hidden');
+          document.body.style.overflow = '';
+        }
+      }
+      window.addEventListener('DOMContentLoaded', function() {
+        setTimeout(hideLoader, 1600);
+      });
+      setTimeout(hideLoader, 2500);
+    })();
+  </script>
+</body>
+</html>
